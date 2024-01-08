@@ -1,0 +1,261 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+}
+
+header div
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header, .wrapper
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+header img
+{
+    width: 150px;
+}
+
+header input
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+header input[type="text"]
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header input[type="submit"]
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(189, 8, 8);
+    color: white;
+}
+
+header input[type="submit"]:hover
+{
+    cursor: pointer;
+}
+
+.wrapper
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+}
+
+
+section
+{
+    flex-grow: 1;
+}
+
+section img
+{
+    width: 600px;
+    height: 337px;
+}
+
+section figure
+{
+    display: flex;
+}
+
+section .informacoes
+{
+    background-color: rgb(189, 8, 8);
+    padding: 1em;
+    color: black;
+    width: 702.58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.informacoes h1
+{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.menuzinho
+{
+    background-color: white;
+    display: flex;
+    padding: 1em;
+}
+
+section a
+{
+    color: black;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section a:first-of-type
+{  
+    border-right: 1px solid black; 
+}
+
+.sinopse
+{
+    margin-top: 5em;
+    width: 100%;
+}
+
+.temporadasEP
+{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.sinopse h1, .temporadasEP h1
+{
+    margin-bottom: 0.5em;
+}
+
+.temporadasEP select
+{
+    padding: 5px;
+}
+
+
+.temporadasEP h3
+{
+    margin-top: 1em;
+}
+
+.episodios
+{
+    margin-top: 1em;
+    width: 100%;
+    gap: 10px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.epDiv
+{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow-wrap:break-word;
+    background-color: white;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.episodios div div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.episodios p
+{
+    padding-left: 0.2em;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    header input[type="text"]
+    {
+        width: 270px;
+    }
+
+    section img
+    {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 599px)
+{
+    header input[type="text"]
+    {
+        width: 100%;
+        box-sizing: content-box;
+    }
+
+    header div
+    {
+        margin-left: 20px;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .serie figure
+    {
+        flex-direction: column;
+
+    }
+
+    section img
+    {
+        width: 100%;
+    }
+
+    section .informacoes
+    {
+        width: 100%;
+    }
+
+    .episodios
+    {
+        flex-direction: column;
+    }
+
+    .informacoes h1
+    {
+        font-size: 6vw;
+        margin-bottom: 0.5em;
+    }
+
+    .episodios div
+    {
+        width: 100%;
+    }
+}
